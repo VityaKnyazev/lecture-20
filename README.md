@@ -8,21 +8,28 @@
 <li>add web module</li>
 <li>add spring dispatcher servlet</li>
 <li>add spring context</li>
-<lideploy to servlet container per student</li>
+<li>deploy to servlet container per student</li>
 </ol>
 
 
 <h2>What's done:</h2>
 <ol>
-<li></li>
-<li></li>
-<li></li>
+<li>Added practice (gitignore, README, etc ;-)</li>
+<li>Added modules from hometask #18</li>
+<li>Added service module</li>
+<li>Added web module with controller</li>
+<li>Added spring context to multi module App</li>
+<li>Deployed with tomcat server on path: /goods</li>
 </ol>
 
 <h3>To run App you should:</h3>
 <ol>
-<li>Build project: $mvn clean package</li>
-<li>Run new mysql server for the App: $docker-compose up -d</li>
-<li>Run liquibase to create tables and insert data: $mvn liquibase:update</li>
-<li>Run App</li>
+<li>Build project: $mvn clean install</li>
+<li>Run new postgresql server for the App: $docker-compose up -d</li>
+<li>Run liquibase to create tables and insert data:</li>
+	<ol>
+		<li>$cd persistence</li>
+		<li>$mvn liquibase:update</li>
+	</ol>
+<li>Run App on server mapped on /goods</li>
 </ol>
